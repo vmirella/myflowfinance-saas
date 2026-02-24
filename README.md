@@ -7,7 +7,8 @@ MyFlowFinance is a cloud-based personal finance SaaS that allows users to track 
 - Vue 3
 - TypeScript
 - Pinia
-- Tailwind (coming soon)
+- Tailwind
+- Vite
 - Serverless Cloud Backend (coming soon)
 
 ## Status
