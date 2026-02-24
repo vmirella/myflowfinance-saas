@@ -12,6 +12,7 @@ defineProps<{
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
     </h3>
+    <h1 class="text-3xl font-bold underline">Hello MyFlowFinance</h1>
   </div>
 </template>
 
