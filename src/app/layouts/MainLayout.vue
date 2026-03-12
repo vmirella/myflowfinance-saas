@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useAuthStore } from '@/modules/auth/store/auth.store'
+import { useRouter } from 'vue-router'
+
+const authStore = useAuthStore()
+const router = useRouter()
+const logout = () => {
+  router.replace({ name: 'login' })
+  authStore.logout()
+}
+</script>
 
 <template>
   <div class="min-h-screen flex bg-gray-100">
@@ -6,8 +16,11 @@
     <aside class="w-64 bg-slate-900 text-white p-6">
       <h2 class="text-xl font-bold mb-8">My Flow Finance</h2>
       <nav class="flex flex-col gap-3">
-        <router-link to="/" class="hover:bg-slate-700 p-2 rounded"> Dashboard </router-link>
+        <router-link to="/dashboard" class="hover:bg-slate-700 p-2 rounded">
+          Dashboard
+        </router-link>
       </nav>
+      <button @click="logout">Logout</button>
     </aside>
 
     <!-- Content -->
